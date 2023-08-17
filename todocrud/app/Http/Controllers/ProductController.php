@@ -17,7 +17,6 @@ class ProductController extends Controller
             'desc' => 'required | regex:/^[\pL\s\-]+$/u',
             'image' => 'required',
         ]);
-        return 'success';
 
         $product = new Product();
         $getImg = $request->file('image');

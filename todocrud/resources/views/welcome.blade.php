@@ -15,6 +15,7 @@
         <div class="row">
             <div class="col-md-4 border border-rounded">
                 <h1 class="text-center">Add Data</h1>
+                <h5 class="mb-0 text text-success">{{Session::get('msg')}}</h5>
                 <form action="{{route('store')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group mb-3">
