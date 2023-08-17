@@ -20,17 +20,17 @@
                     <div class="form-group mb-3">
                         <label>Product Name</label>
                         <input type="text" name="name" class="form-control">
-                        <span style="color: red">{{$errors->has('first_name') ? $errors->first('first_name') : ' '}}</span>
+                        <span style="color: red">{{$errors->has('name') ? $errors->first('name') : ' '}}</span>
                     </div>
                     <div class="form-group mb-3">
                         <label>Description</label>
                         <textarea name="desc" type="text" class="form-control" cols="5" rows="5"></textarea>
-                        <span style="color: red">{{$errors->has('last_name') ? $errors->first('last_name') : ' '}}</span>
+                        <span style="color: red">{{$errors->has('desc') ? $errors->first('desc') : ' '}}</span>
                     </div>
                     <div class="form-group mb-3">
                         <label>Product Image</label>
                         <input type="file" name="image" class="form-control">
-                        <span style="color: red">{{$errors->has('email') ? $errors->first('email') : ' '}}</span>
+                        <span style="color: red">{{$errors->has('image') ? $errors->first('image') : ' '}}</span>
                     </div>
                     <div class="form-group mb-3">
                         <label>Status</label>

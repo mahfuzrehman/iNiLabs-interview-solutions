@@ -12,6 +12,13 @@ class ProductController extends Controller
         return view('welcome', compact('products'));
     }
     public function store(Request $request) {
+         $this->validate($request, [
+            'name' => 'required | regex:/^[\pL\s\-]+$/u',
+            'desc' => 'required | regex:/^[\pL\s\-]+$/u',
+            'image' => 'required',
+        ]);
+        return 'success';
+
         $product = new Product();
         $getImg = $request->file('image');
         $imgExt = $getImg->getClientOriginalExtension();
